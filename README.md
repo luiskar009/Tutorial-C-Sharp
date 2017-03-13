@@ -94,3 +94,40 @@ int g = a.Second // Devuelve el año de la fecha
 * Operaciones con fechas
 La fechas se pueden sumar o restar utilizando los operandos (+,-).
 
+## Arrays
+
+* Constructor array
+```[csharp]
+int[] a = new int[5]; //Crea un array de tipo int con 5 elementos vacios
+int[] b = new int[5]{1,2,3,4,5}; //Crea un array de tipo int con 5 elementos y lo rellena
+string[][] c = new string [][]; //Crea un array matriz
+```
+* Concatenar elementos de un array en un string
+```[csharp]
+int[] a = new int[2]{0,1};
+string b = string.Join("-",a); //b contiene la cadena "0-1"
+```
+* Crear array a partir de una cadena de strings
+```[csharp]
+string a = "a/b/c";
+string[] b = new string[3];
+b = a.Split("/"); // Guardaria a en la posicion 0, b en la posicion 1 y c en la posicion 2
+```
+* Saber el tamaño de un array
+```[csharp]
+int[] a = new int[2];
+int b = a.Length // Devolveria 2
+```
+* Pasar un elemento del array a string
+```[csharp]
+int[] a = new int[2]{0,1};
+string b = a[0].ToString(); //b contendria "0"
+```
+* Recorrer un array
+```[csharp]
+int[] a = new int[2]{0,1};
+foreach (int element in a)
+{
+//aqui se haria lo que se quisiera con cada elemento
+}
+```
