@@ -4,6 +4,8 @@ Instrucciones c#
 
 1. [Operaciones con Strings](#operaciones-con-strings)
 2. [Operaciones con DateTime](#operaciones-con-datetime)
+3. [Arrays](#arrays)
+4. [Listas](#listas)
 
 ## Operaciones con Strings
 * Concatenar dos Strings
@@ -51,6 +53,12 @@ a = String.Replace("Mundo","Nuevo"); //Introduce en Cambia Mundo por Nuevo
 ```[csharp]
 String a = "Hello World";
 bool b = a.Contains("Hello"); // b contendria true
+```
+* Saber si un string empieza o termina en un string
+```[csharp]
+String a = "Hello World";
+bool b = a.StartsWith("Hello"); // b contendria true
+bool b = a.EndsWith("World"); // b contendria true
 ```
 ## Operaciones con DateTime
 * Mostrar la fecha y la hora en este momento
@@ -127,6 +135,46 @@ string b = a[0].ToString(); //b contendria "0"
 ```[csharp]
 int[] a = new int[2]{0,1};
 foreach (int element in a)
+{
+//aqui se haria lo que se quisiera con cada elemento
+}
+```
+## Listas
+* Constructor lista
+```[csharp]
+List<string> list = new List<string>();
+```
+* Añadir elemento a la lista
+```[csharp]
+list.Add("a"); //Añade "a" a list
+```
+* Borrar un elemento de la lista
+```[csharp]
+list.Remove("a"); //Elimina "a" a list
+```
+* Insertar un elemento a la lista
+```[csharp]
+list.Remove(2, "a"); //Añade "a" a list en la posicion 2
+```
+* Eliminar elementos de una lista que cumplan una condicion
+```[csharp]
+list.RemoveAll(string.ToLower().EndsWith("br")); //Elimina todos los elementos terminados en br
+```
+* Eliminar elemento por posicion
+```[csharp]
+list.RemoveAt(2); //Elimina el elemento colocado en la posicion 2
+```
+* Vaciar la lista
+```[csharp]
+list.Clear(); //Deja la lista vacia de elementos
+```
+* Saber el numero de elementos que contiene una lista
+```[csharp]
+int a = list.Count(); //Devuelve el numero de elementos
+```
+* Recorrer lista
+```[csharp]
+foreach(int element in list)
 {
 //aqui se haria lo que se quisiera con cada elemento
 }
