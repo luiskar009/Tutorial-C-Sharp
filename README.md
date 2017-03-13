@@ -1,6 +1,6 @@
 # Tutorial-C-Sharp
 Instrucciones c#
-#Operaciones con Strings
+## Operaciones con Strings
 * Concatenar dos Strings
 ```[csharp]
 String concat = "HOLA + "MUNDO";
@@ -47,3 +47,45 @@ a = String.Replace("Mundo","Nuevo"); //Introduce en Cambia Mundo por Nuevo
 String a = "Hello World";
 bool b = a.Contains("Hello"); // b contendria true
 ```
+## Operaciones con DateTime
+* Mostrar la fecha y la hora en este momento
+```[csharp]
+DateTime a = DateTime.Now(); 
+```
+* Mostrar la fecha de hoy
+```[csharp]
+DateTime a = DateTime.Today(); 
+```
+* Constructor DateTime nuevo
+```[csharp]
+DateTime a = new DateTime(2017,8,1); //Unicamente la fecha (año,mes,dia)
+DateTime b = new DateTime(2017,8,1,8,0,0); // Fecha y hora (año,mes,dia,hora,minuto,segundo)
+```
+* Modificar una fecha guardada
+```[csharp]
+DateTime a = DateTime.Now(); 
+DateTime b = a.AddYear(1); // Añade o quita años, dependiendo de si el valor es pòsitivo o negativo
+DateTime c = a.AddMonths(1); // Añade o quita meses, dependiendo de si el valor es pòsitivo o negativo
+DateTime d = a.AddDays(1); // Añade o quita dias, dependiendo de si el valor es pòsitivo o negativo
+DateTime e = a.AddHours(1); // Añade o quita horas, dependiendo de si el valor es pòsitivo o negativo
+DateTime f = a.AddMinutes(1); // Añade o quita minutos, dependiendo de si el valor es pòsitivo o negativo
+DateTime g = a.AddSeconds(1); // Añade o quita segundos, dependiendo de si el valor es pòsitivo o negativo
+```
+* Pasar un String a DataTime
+```[csharp]
+String a = "01-01-2017";
+DateTime b = DateTime.Parse(a); 
+```
+* Devolver una parte de una fecha DateTime
+```[csharp]
+DateTime a = DateTime.Now();
+int b = a.Year // Devuelve el año de la fecha
+int c = a.Month // Devuelve el año de la fecha
+int d = a.Day // Devuelve el año de la fecha
+int e = a.Hour // Devuelve el año de la fecha
+int f = a.Minute // Devuelve el año de la fecha
+int g = a.Second // Devuelve el año de la fecha
+```
+* Operaciones con fechas
+La fechas se pueden sumar o restar utilizando los operandos (+,-).
+
