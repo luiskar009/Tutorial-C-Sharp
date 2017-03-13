@@ -1,5 +1,10 @@
 # Tutorial-C-Sharp
 Instrucciones c#
+## Indice
+
+1. [Operaciones con Strings](#operaciones-con-strings)
+2. [Operaciones con DateTime](#operaciones-con-datetime)
+
 ## Operaciones con Strings
 * Concatenar dos Strings
 ```[csharp]
