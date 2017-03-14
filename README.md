@@ -119,7 +119,7 @@ string b = string.Join("-",a); //b contiene la cadena "0-1"
 ```[csharp]
 string a = "a/b/c";
 string[] b = new string[3];
-b = a.Split("/"); // Guardaria a en la posicion 0, b en la posicion 1 y c en la posicion 2
+b = Regex.Split(a,"/"); // Guardaria a en la posicion 0, b en la posicion 1 y c en la posicion 2
 ```
 * Saber el tamaño de un array
 ```[csharp]
