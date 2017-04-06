@@ -1,5 +1,9 @@
 # C Sharp
-
+## Indice
+1. [Operaciones con Strings](#operaciones-con-strings)
+2. [Operaciones con DateTime](#operaciones-con-datetime)
+3. [Arrays](#arrays)
+4. [Listas](#listas)
 ## Operaciones con Strings
 * Concatenar dos Strings
 ```csharp
